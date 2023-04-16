@@ -1,0 +1,35 @@
+* {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    max-width: 80%;
+}
+
+h1 {
+    margin-top: 25vh;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+button {
+    margin-top: 10vh;
+    border-radius: 12px;
+    border: 3px solid;
+    font-size: 20px;
+    padding: 3vh;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }

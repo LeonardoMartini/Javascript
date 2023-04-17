@@ -17,7 +17,7 @@ function alterarCor() {
 }
 
 function alterarCorTexto(cor) {
-    var textos = document.querySelectorAll('body *:not(script)');
+    const textos = document.querySelectorAll('body *:not(script)');
 
     for (var i = 0; i < textos.length; i++) {
     textos[i].style.color = cor;

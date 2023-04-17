@@ -7,13 +7,43 @@ document
 function alterarCor() {
     const cor =  gerarCor();
 
+    if (cor.luz <= 100) {
+        alterarCorTexto('white');
+    } else {
+        alterarCorTexto('black');
+    }
+
+    alterarCorFundo(cor.cor);
+}
+
+function alterarCorTexto(cor) {
+    var textos = document.querySelectorAll('body *:not(script)');
+
+    for (var i = 0; i < textos.length; i++) {
+    textos[i].style.color = cor;
+    }   
+}
+
+function alterarCorFundo(cor) {
     document.body.style.backgroundColor = cor;
     document.querySelector('button').style.backgroundColor = cor;
     document.querySelector('span').textContent = cor;
 }
 
 function gerarCor() {
-    return `rgb(${gerarNumero()},${gerarNumero()},${gerarNumero()})`;
+    const r = gerarNumero();
+    const g = gerarNumero();
+    const b = gerarNumero();
+    const luz = (r + g + b) / 3;
+    const cor = `rgb(${r},${g},${b})`;
+
+    return {
+        vermelho: r,
+        verde: g, 
+        azul: b,
+        luz, 
+        cor
+    }
 }
 
 function gerarNumero() {

@@ -1,3 +1,5 @@
-# Trocador-Cor
+# Javascript
 
-Site que retorna uma cor aleatória em rgb sempre que o botão é clicado.
+Programas simples em javascript/html/css para estudar.
+
+[Gerador de cor](https://github.com/LeonardoMartini/Javascript/blob/main/)
